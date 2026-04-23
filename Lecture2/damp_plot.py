@@ -28,11 +28,11 @@ ax = fig.add_subplot(111)
 ax.set_xlim(0, t[-1])
 ax.set_ylim(0, 1.0)
 
-plt.plot(t, v, "o", linewidth=2, color="b", label=r"$dv/dt = -v$")
+plt.plot(t, v, "o", linewidth=2, color="b", label=r"${\rm d}\tilde{v}/{\rm d}\tilde{t} = -\tilde{v}$")
 
 # ---- 理論解 ----
 v_exact = np.exp(-t)
-plt.plot(t, v_exact, "-", linewidth=3, color="r", label=r"$v(t)=e^{-t}$")
+plt.plot(t, v_exact, "-", linewidth=3, color="r", label=r"$\tilde{v}=e^{-\tilde{t}}$")
 
 # ---- 図の設定 ----
 plt.tick_params(which='major', width=1, length=10)
@@ -45,8 +45,8 @@ ax.spines['right'].set_linewidth(3)
 
 
 # ---- 軸のラベル ----
-plt.xlabel(r"$\tilde{t}$", color='k', size=30)
-plt.ylabel(r"$\tilde{v}(\tilde{t})$", color='k', size=30)
+plt.xlabel(r"$\tilde{t}~~(=t/t_0)$", color='k', size=30)
+plt.ylabel(r"$\tilde{v}(\tilde{t})~~(=v/v_0)$", color='k', size=30)
 
 plt.xticks(color='k', size=25)
 plt.yticks(color='k', size=25)
