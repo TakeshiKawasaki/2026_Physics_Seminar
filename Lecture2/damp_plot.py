@@ -45,8 +45,8 @@ ax.spines['right'].set_linewidth(3)
 
 
 # ---- 軸のラベル ----
-plt.xlabel(r"$t$", color='k', size=30)
-plt.ylabel(r"$v(t)$", color='k', size=30)
+plt.xlabel(r"$\tilde{t}$", color='k', size=30)
+plt.ylabel(r"$\tilde{v}(\tilde{t})$", color='k', size=30)
 
 plt.xticks(color='k', size=25)
 plt.yticks(color='k', size=25)
