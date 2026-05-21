@@ -15,10 +15,10 @@ zeta=[10,2,1,0.1]
 
 for j in range(1,5):
     ax = fig.add_subplot(2,2,j)
-    t, v0,x0  = np.loadtxt("./Lecture4/damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[0]), comments='#', unpack=True)
-    t, v1,x1  = np.loadtxt("./Lecture4/damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[1]), comments='#', unpack=True)
-    t, v2,x2  = np.loadtxt("./Lecture4/damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[2]), comments='#', unpack=True)
-    t, v3,x3  = np.loadtxt("./Lecture4/damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[3]), comments='#', unpack=True)
+    t, v0,x0  = np.loadtxt("./damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[0]), comments='#', unpack=True)
+    t, v1,x1  = np.loadtxt("./damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[1]), comments='#', unpack=True)
+    t, v2,x2  = np.loadtxt("./damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[2]), comments='#', unpack=True)
+    t, v3,x3  = np.loadtxt("./damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt[j-1],zeta[3]), comments='#', unpack=True)
     plt.title("$\Delta t/t_s ={:.4f}$".format(dt[j-1]),size=40)
     plt.plot(t, x0, "o-",markersize=10,color="b",label=r"$t_s/t_d={:.1f}$".format(zeta[0]))
     plt.plot(t, x1, "D-",markersize=10,color="g",label=r"$t_s/t_d={:.1f}$".format(zeta[1]))
