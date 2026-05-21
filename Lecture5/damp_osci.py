@@ -10,7 +10,7 @@ def damp_osci(dt,zeta):
     t=0.
     i=0
     out=0.
-    f = open("./Lecture4/damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt,zeta), 'w')
+    f = open("./damp_osci_dt{:.4f}_zeta{:.1f}.dat".format(dt,zeta), 'w')
     while i < (int)(50./dt): 
         v -= zeta*v*dt+x*dt
         x+=v*dt
