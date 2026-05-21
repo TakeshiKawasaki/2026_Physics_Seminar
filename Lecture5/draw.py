@@ -40,5 +40,5 @@ for j in range(1,5):
     #図のマージン設定
     plt.subplots_adjust(wspace=0.3, hspace=0.35)
 
-plt.savefig('./Lecture4/damp_osci.png')
-plt.savefig('./Lecture4/damp_osci.pdf')
+plt.savefig('./damp_osci.png')
+plt.savefig('./damp_osci.pdf')
