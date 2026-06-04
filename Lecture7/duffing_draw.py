@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 %config InlineBackend.figure_format = 'retina'
 import numpy as np
 
-plt.rcParams["text.usetex"] =True
+#plt.rcParams["text.usetex"] =True
 
 plt.rcParams['font.family'] = 'Arial' #使用するフォント名
 plt.rcParams["font.size"] = 40
